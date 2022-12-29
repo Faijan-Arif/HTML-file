@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/6496270/pexels-photo-6496270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="400px" alt="no image">
+
+    <img src="./coding_ninj.png" width="400px" alt="no image">
+    <picture>
+        <source media="(min-width: 650px)" srcset="./coding_ninj.png"/>
+        <source media="(min-width: 460px)" srcset="./coding_ninja2.png"/>
+        <img src="./coding_ninj.png" alt=" ">
+    </picture>
+    <!-- an image map generator -->
+    <img src="coding_ninja.png" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="95,90,239,107" shape="rect">
+
+    <area onclick="two()" target="" alt="" title="" href="" coords="5,4,49,95" shape="0">
+</map>
+
+<script>
+    function one(){
+        alert( "you click on one")
+    }
+    function two(){
+        alert( "you click on two")
+    }
+</script>
+
+</body>
+</html>
